@@ -1,0 +1,9 @@
+<%= index_field_wrapper **field_wrapper_args do %>
+   <%= content_tag :div, data: {
+    controller: "month-field",
+    month_field_view_value: @view,
+    month_field_format_value: @field.format,
+  } do %>
+    <%= @field.formatted_value %>
+  <% end %>
+<% end %>
